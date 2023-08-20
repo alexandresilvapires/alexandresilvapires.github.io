@@ -1,1 +1,1176 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandre S. Pires | Student, Pianist</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile-photo.jpg" alt="Alexandre Pires" width="10">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Alexandre S. Pires">Alexandre S. Pires</h1>
+          <p class="title">Student, soon-to-be researcher</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+        <!--
+          <ul class="contacts-list">
+            <li class="contact-item">
+              
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Sacramento, California, USA</address>
+            </div>
+          </li>
+        </ul> 
+        <div class="separator"></div>
+      -->
+
+        <ul class="social-list">          
+          <li class="social-item">
+            <a href="https://github.com/alexpires7" class="social-link">
+              <span title="GitHub" style="font-size: x-large;">
+                <ion-icon class = "socials-icons" name="logo-github"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/alexandre-s-pires/" class="social-link">
+              <span title="LinkedIn" style="font-size: x-large;">
+                <ion-icon class = "socials-icons" name="logo-linkedin"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://twitter.com/alexipires16" class="social-link">
+              <span title="Twitter" style="font-size: x-large;">
+                <ion-icon class = "socials-icons" name="logo-twitter"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="mailto:alexandresilvapires16@tecnico.ulisboa.pt" class="social-link">
+              <span title="E-mail" style="font-size: x-large;">
+                <ion-icon class = "socials-icons" name="mail"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://scholar.google.pt/citations?user=WBB1xbIAAAAJ" class="social-link">
+              <span title="Google Scholar" style="font-size: x-large;">
+                <ion-icon class = "socials-icons" name="school"></ion-icon>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hey! I'm Alexandre Pires, a second-year Computer Science and Engineering master's student at Instituto Superior Tecnico, in Lisbon, Portugal.
+            The focus of my formal education is on Artificial Intelligence and Complex Systems,
+            but I always aim to bring perspectives from various fields to complement my work. As such, I also studied history, economy, ecology and more.
+            I am currently doing my master thesis on investigating the adoption patterns of Open-Access science publishing using Evolutionary Game Theory, accompanied by professors Francisco C. Santos and Jorge M. Pacheco. 
+          </p>
+
+          <p>
+            Besides my work in computer science, I study jazz piano, video-game development, languages, and more.
+          </p>
+
+          <p>
+            This site is a hub for all my projects!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon class = "socials-icons" name="book-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research</h4>
+                <p class="service-item-text">
+                  My scientific focus is in complex systems, multiagent systems, game theory and pro-social AI.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon class = "socials-icons" name="musical-notes-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Jazz and Composition</h4>
+                <p class="service-item-text">
+                  I study jazz, composition and arrangement. My main instruments are piano and saxophone.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon class = "socials-icons" name="game-controller-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video-games</h4>
+                <p class="service-item-text">
+                  I love and do all facets of video-game development, from programming to design to music and art!
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon class = "socials-icons" name="add-circle-outline"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Other activities</h4>
+                <p class="service-item-text">
+                  I've been doing language learning (JP and IT), poetry, pixel art, and way more! Check the projects section.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <span title="Close" style="font-size: x-large;">
+                <ion-icon name="close-outline"></ion-icon>
+              </span>              
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <a href="https://drive.google.com/file/d/1cFI5Rr7xNnE-pmoqtIiqs8OcoajqFRJ6/view?usp=sharing" class="social-link"> 
+          <span class="cv-item">Check my CV here</span> <!-- #TODO-->
+        </a>
+
+        <div class="separator"></div>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master's Degree in Computer Science and Engineering</h4>
+
+              <span>Instituto Superior Tecnico, University of Lisbon | 2021 — 2023</span>
+
+              <p class="timeline-text">
+                - Thesis: "Evolutionary Multi-Sector Analysis of Open-Access Adoption In Scientific Communication". Supervisors: Francisco C. Santos, Jorge M. Pacheco <br>
+                - Final Grade: 18/20 (projected) <br>
+                - Academic Merit Diploma 2021/2022 <br>
+                - Specialization in Artificial Intelligence and Bioinformatics
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor's Degree in Computer Science and Engineering</h4>
+
+              <span>Instituto Superior Tecnico, University of Lisbon | 2018 — 2021</span>
+
+              <p class="timeline-text">
+                - Final Grade: 17/20 <br>
+                - Academic Merit Diploma 2019/2020, 2020/2021
+              </p>
+
+            </li>
+
+            <!--
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Escola Reynaldo dos Santos</h4>
+                <span>Highschool | 2002 — 2004</span>
+                <p class="timeline-text">
+                  Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                  magni dolores
+                  eos.
+                </p>
+              </li>
+            -->
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Teaching Assistant</h4>
+
+              <span> Instituto Superior Tecnico, University of Lisbon | Sep. 2021 — Aug. 2023</span>
+
+              <p class="timeline-text">
+                Courses taught:<br>
+                - Compilers - Spring 2022/2023<br>
+                - Software Engineering - Spring 2021/2022, 2022/2023<br>
+                - Data Science - Fall 2022/2023<br>
+                - Object-Oriented Programming - Fall 2021/2022<br>
+                <br>
+                - IST Award for Excellence in Teaching - 2021/2022
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Early Stage Researcher</h4>
+
+              <span>HLT Lab, INESC-ID | Jun. 2021 — Feb. 2022</span>
+
+              <p class="timeline-text">
+                - Role: Researching Musicological Information Extraction from Soundtracks, using RL and GIS <br>
+                - Supervisor: David M. Matos
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="musical-notes-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Other Activities</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Jazz Piano</h4>
+              <span>  Escola Luiz Villas-Boas, Hot Club de Portugal | Sep. 2022 — Aug. 2023</span>
+              <p class="timeline-text">
+                - Studied jazz piano, composition and arrangement in Hot Club's Jazz Course
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Git Workshop</h4>
+              <span>Instituto Superior Tecnico, University of Lisbon | Mar. 2023</span>
+              <p class="timeline-text">
+                - Lectured a Git workshop organized by the computer science student group, NEIIST
+              </p>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MIRAI Program</h4>
+              <span>Tokyo, Japan | Feb. 2023</span>
+              <p class="timeline-text">
+                - Participated in various cultural exchange activities offered by the Japanese government as a representant of Portugal in the science group
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!--
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            
+            <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+            
+            <li class="skills-item">
+              
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      -->
+
+      </article>
+
+      
+
+
+
+      <!--
+        - #PROJECTS
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>University Projects</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Video-Games</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Writtings</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Music</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>University Projects</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Video-Games</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Writtings</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Music</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="video-games">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    EVENTUALLY!
+                  </div>
+                  <img src="./assets/images/limitations1.png" alt="limitations" loading="lazy">
+                </figure>
+                <h3 class="project-title">LIMITATIONS</h3>
+                <p class="project-category">
+                  A full-scale in-development walking simulator about the metaphysics and surrealism present in everyone's lives.<br>
+                  <b>Video-games</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video-games">
+              <a href="https://curseforge.com/minecraft/texture-packs/furigana-for-japanese">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/furigana-for-minecraft.png" alt="furigana" loading="lazy">
+                </figure>
+                <h3 class="project-title">Furigana For Japanese</h3>
+                <p class="project-category">
+                  A Minecraft resource pack to add Furigana to Japanese, to help learning kanji. Made using NLP Deep-Learning tools.<br>
+                  <b>Video-games</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video-games">
+              <a href="https://www.curseforge.com/minecraft/mc-mods/alexs-duck-mod">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/duck-mod.png" alt="duckmod" loading="lazy">
+                </figure>
+                <h3 class="project-title">Alex's Duck Mod</h3>
+                <p class="project-category">
+                  A Minecraft mod to add the simple, cute and humble duck.<br>
+                  <b>Video-games</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="video-games">
+              <a href="https://doomsdaygames.itch.io/modular">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/modular.png" alt="modular" loading="lazy">
+                </figure>
+                <h3 class="project-title">Modular</h3>
+                <p class="project-category">
+                  Made in less than 48h for the IndieTalesGameJam, Modular is a space building arcade game 
+                  where you collect modules to increase your ship's power to fight against hordes of Salivanos.<br>
+                  <b>Video-games</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="music">
+              <a href="https://www.youtube.com/watch?v=VArCXoVooIQ">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/theres-a-mountain.png" alt="theresamountainbetweenus" loading="lazy">
+                </figure>
+                <h3 class="project-title">There's A Mountain Between Us</h3>
+                <p class="project-category">
+                  A short album made in less than 48h for a videogame music jam. Inspired by the duality of the sides of a mountain,
+                  where one can have everything you want, and another has all the rest.<br>
+                  <b>Music</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="writtings">
+              <a href="https://docs.google.com/document/d/1jz-dWR1gAtZQ46_bXkMsCzD8T0yqZGYp2Vz35LK6TB8/edit?usp=sharing">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/environmentalism.png" alt="environmentalismaccepts" loading="lazy">
+                </figure>
+                <h3 class="project-title">How Environmentalism Accepts and Transforms Technology</h3>
+                <p class="project-category">
+                  An essay about tecnological growth driving environmentalism, which then guides (or should guide) technological growth.<br>
+                  <b>Writtings</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="writtings">
+              <a href="https://docs.google.com/document/d/1rplAIVzqOKJN-m9dEHcEGQ67fKFO8dSzz3Au50E7suk/edit?usp=sharing">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/howmuchchange.jpg" alt="howmuchchange" loading="lazy">
+                </figure>
+                <h3 class="project-title">How Much Change Can a Single Technology Make?</h3>
+                <p class="project-category">
+                  An essay about the limits of isolated technological developments.<br>
+                  <b>Writtings</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="writtings">
+              <a href="https://docs.google.com/document/d/1e24CKQ6pUdz3bajeDCdZR-Ktpphg-dIRt8501Xow0LA/edit?usp=sharing">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/li-ion.jpg" alt="li-ion" loading="lazy">
+                </figure>
+                <h3 class="project-title">The Journey to Li-ion Batteries, their Importance, and their Challenges</h3>
+                <p class="project-category">
+                  An essay written for the Big History and Sustainability course, in collaboration with João Fonseca.
+                  It explores the relevance and challenges faced by lithium-ion batteries.<br>
+                  <b>Writtings</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="writtings">
+              <a href="https://docs.google.com/document/d/1yCOBwCPE6_X_ssWjW-JhKBbl00553YlJ-mClE_9bDhw/edit?usp=sharing">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/anthropo.jpg" alt="anthropos" loading="lazy">
+                </figure>
+                <h3 class="project-title">Can Anthropos Survive Anthropocentrism?</h3>
+                <p class="project-category">
+                  An essay written for the Big History and Sustainability course, in collaboration with João Fonseca.
+                  It presents the limitations of anthropocentic thinking.<br>
+                  <b>Writtings</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/alexpires7/ChordNation">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/chordnation.png" alt="chordnation" loading="lazy">
+                </figure>
+                <h3 class="project-title">ChordNation</h3>
+                <p class="project-category">
+                  A test project for using midi keyboards to practice chord progression voicings.<br>
+                  <b>Applications</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/alexpires7/chip-8-emu">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/chip8.jpg" alt="chippp" loading="lazy">
+                </figure>
+                <h3 class="project-title">CHIPPP-8</h3>
+                <p class="project-category">
+                  A small and simple Chip-8 console emulator, written in C++.<br>
+                  <b>Applications</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="university projects">
+              <a href="https://github.com/JFonseca25/AP-Project2">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/ap.png" alt="ap-proj2" loading="lazy">
+                </figure>
+                <h3 class="project-title">Image Caption Generator</h3>
+                <p class="project-category">
+                  A project for the second Deep Learning course (2021/22).<br>
+                  <b>University Projects</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="university projects">
+              <a href="https://github.com/alexpires7/AASMA-Project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/human-knot.png" alt="aasma-proj" loading="lazy">
+                </figure>
+                <h3 class="project-title">Competitive and Cooperative Multi-Agent System to Play The Human-Knot Game</h3>
+                <p class="project-category">
+                  A project for the Autonomous Agents and Multi-agent Systems course (2021/22).<br>
+                  <b>University Projects</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="university projects">
+              <a href="https://github.com/alexpires7/PP-Project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/mapf.png" alt="pp-proj" loading="lazy">
+                </figure>
+                <h3 class="project-title">Multi-agent path finding in Minizinc</h3>
+                <p class="project-category">
+                  A project for the Search and Planning course (2021/22).<br>
+                  <b>University Projects</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="university projects">
+              <a href="https://github.com/alexpires7/SSof-Proj">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/vulnerability.png" alt="ssof-proj" loading="lazy">
+                </figure>
+                <h3 class="project-title">Python Vulnerability Analyzer</h3>
+                <p class="project-category">
+                  A project for the Software Security course (2021/22).<br>
+                  <b>University Projects</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="university projects">
+              <a href="https://github.com/alexpires7/NLP_Proj2">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/nlp.png" alt="nlp-proj" loading="lazy">
+                </figure>
+                <h3 class="project-title">Question Categorizer</h3>
+                <p class="project-category">
+                  A project for the Natural Language Processing course (2021/22).<br>
+                  <b>University Projects</b>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="university projects">
+              <a href="https://github.com/alexpires7/P3D_proj">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/unreal.png" alt="p3d-proj" loading="lazy">
+                </figure>
+                <h3 class="project-title">CPU/GPU Ray-Tracer and Unreal Engine Scene</h3>
+                <p class="project-category">
+                  A CPU and a GPU Ray-tracer, and a Unreal Engine scene for the 3D Programming course (2022/23).<br>
+                  <b>University Projects</b>
+                </p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PUBLICATIONS
+      -->
+        
+      <article class="publications" data-page="publications">
+          
+        <header>
+            <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <header>
+          <h4 class="h4 publication-year">2023</h2>
+      </header>
+
+      <span class="publication-item"><b>Master Dissertation:</b> "Evolutionary Multi-Sector Analysis of Open-Access Adoption In
+        Scientific Communication". Supervised by prof. Francisco C. Santos and prof. Jorge M. Pacheco. Link to be added.
+          </span> <br>
+
+        <header>
+          <h4 class="h4 publication-year">2022</h2>
+      </header>
+
+        <a href="https://ieeexplore.ieee.org/abstract/document/9820544" class="social-link"> 
+          <span class="publication-item">Casquilho, M., Pires, A., Rosa, F., de Miranda, J. L., & Bordado, J. M. (2022, June). A
+            web-based superabsorbent polymer solver (in simple science): PHP, Python, Fortran, and
+            Gnuplot together. In 2022 17th Iberian Conference on Information Systems and Technologies
+            (CISTI) (pp. 1-6). IEEE.
+          </span> <br>
+        </a>
+
+        <!--
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+      -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+      -->
+    </div>
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
