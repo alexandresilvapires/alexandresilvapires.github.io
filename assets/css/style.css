@@ -60,11 +60,11 @@
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(243, 38%, 82%);
+  --smoky-black: hsl(0, 0%, 86%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(247, 70%, 78%);
-  --vegas-gold: hsl(248, 51%, 66%);
+  --orange-yellow-crayola: hsl(39, 99%, 57%);
+  --vegas-gold: hsl(39, 99%, 57%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -125,11 +125,35 @@
   box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none;}
+
+a:link {
+  color: var(--vegas-gold);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--vegas-gold);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--vegas-gold);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--vegas-gold);
+  background-color: transparent;
+  text-decoration: none;
+}
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, ion-icon, button, time, span { display: block; } /*a was removed!*/
 
 ion-icon {
   pointer-events: none;
