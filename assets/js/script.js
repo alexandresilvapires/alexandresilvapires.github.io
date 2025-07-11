@@ -157,3 +157,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Image scrolling
+const img = document.getElementById('toggle-image');
+const images = [
+  'assets/images/psd.jpg',
+  'assets/images/frogjumpsoutconcert.jpg'
+];
+let current = 0;
+
+img.addEventListener('click', () => {
+  img.style.opacity = 0;
+  setTimeout(() => {
+    current = (current + 1) % images.length;
+    img.src = images[current];
+    img.style.opacity = 1;
+  }, 100);
+});
