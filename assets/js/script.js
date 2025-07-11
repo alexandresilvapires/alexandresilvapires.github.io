@@ -164,13 +164,21 @@ const images = [
   'assets/images/psd.jpg',
   'assets/images/frogjumpsoutconcert.jpg'
 ];
+const caption = document.getElementById('toggle-image-caption');
+const captions = [
+  'Researcher during the day, with the Prosocial Dynamics Lab',
+  'Keyboardist during the night, with Frog Jumps Out'
+];
 let current = 0;
 
 img.addEventListener('click', () => {
   img.style.opacity = 0;
+  caption.style.opacity = 0;
   setTimeout(() => {
     current = (current + 1) % images.length;
     img.src = images[current];
     img.style.opacity = 1;
+    caption.textContent = captions[current];
+    caption.style.opacity = 1;
   }, 100);
 });
