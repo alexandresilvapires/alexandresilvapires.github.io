@@ -166,8 +166,8 @@ const images = [
 ];
 const caption = document.getElementById('toggle-image-caption');
 const captions = [
-  'Researcher during the day, with the Prosocial Dynamics Lab',
-  'Keyboardist during the night, with Frog Jumps Out'
+  'The Prosocial Dynamics Lab',
+  'A concert with Frog Jumps Out'
 ];
 let current = 0;
 
