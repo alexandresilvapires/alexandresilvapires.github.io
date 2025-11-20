@@ -1037,6 +1037,12 @@ main {
     margin-bottom: 30px;
   }
 
+  .sidebar-cv-text {
+    font-size: large;
+    color: var(--vegas-gold); /* change to whatever color you want */
+    font-weight: bold; /* optional */
+  }
+
   .sidebar.active { max-height: 584px; }
 
   .sidebar-info { gap: 25px; }
