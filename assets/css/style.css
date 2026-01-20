@@ -21,50 +21,7 @@
    * colors
    */
 
-  /* gradient */
-
-  --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
-  );
-  --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(39, 99%, 57%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
-  );
-  --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
-  --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
-  );
-  --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(39, 99%, 57%) 0%, 
-    hsl(39, 99%, 57%) 0%, 
-  );
-
   /* solid */
-
-  --jet: hsl(0, 0%, 22%);                 /* panel borders */
-  --onyx: hsl(240, 1%, 17%);              /* tag below name */
-  --eerie-black-2: hsl(240, 2%, 13%);     /* main panel color */
-  --smoky-black: hsl(0, 0%, 86%);       /* background color */
-  --white-1: hsl(0, 0%, 100%);            /* secondary text color: tag, publication years, default links */
-  --white-2: hsl(0, 0%, 98%);             /* secondary text color: headers */
-  --vegas-gold: hsl(39, 99%, 57%);        /* highlight color */
-  --light-gray: hsl(0, 0%, 84%);          /* main text color */
-  --light-gray-70: hsla(0, 0%, 84%, 0.7); /* hover button color */
 
   --jet: hsl(0, 0%, 18%); 
   --onyx: hsl(240, 1%, 14%);
@@ -72,9 +29,47 @@
   --smoky-black: hsl(0, 0%, 98%);
   --white-1: hsl(0, 0%, 88%);
   --white-2: hsl(0, 0%, 94%);
-  --vegas-gold: hsl(39, 100%, 65%);
+  --vegas-gold: hsl(200, 100%, 77%);
   --light-gray: hsl(0, 0%, 89%);
   --light-gray-70: hsla(0, 0%, 78%, 0.5);
+
+  /* gradients */
+
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    var(--jet) 3%,
+    var(--jet-dark) 97%
+  );
+
+  --bg-gradient-jet: linear-gradient(
+    to bottom right,
+    hsla(240, 1%, 18%, 0.25) 0%,
+    hsla(240, 2%, 11%, 0) 100%
+  ), var(--eerie-black-2);
+
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right,
+    var(--vegas-gold) 0%,
+    hsla(39, 99%, 57%, 0) 50%
+  );
+
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg,
+    hsla(0, 0%, 42%, 0.25) 0%,
+    hsla(39, 99%, 57%, 0) 59.86%
+  ), var(--eerie-black-2);
+
+  --border-gradient-onyx: linear-gradient(
+    to bottom right,
+    var(--jet) 0%,
+    hsla(0, 0%, 22%, 0) 50%
+  );
+
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    var(--vegas-gold) 0.0,
+    var(--vegas-gold) 0.0,
+  );
   
   /**
    * typography
